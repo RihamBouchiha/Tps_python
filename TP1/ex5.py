@@ -1,14 +1,13 @@
 try:
-        n = int(input("Saisissez le nombre de termes de la suite de Fibonacci à afficher : "))
+    n = int(input("Saisissez le nombre de termes de la suite de Fibonacci à afficher : "))
+    while n<0:
+        n = int(input("Saisissez un nombre qui est sup a 0 : "))
 
-    if n <= 0:
-        raise ValueError("Le nombre doit être positif.")
+    
     a, b = 0, 1
-
-    print("Les premiers", n, "termes de la suite de Fibonacci sont :")
-
-    for _ in range(n):
+    for _ in range(n):               
         print(a, end=" ")  
-        a, b = b, a + b    
-except ValueError as e:
-    print(f"Erreur : {e}. Veuillez entrer un nombre entier positif.")
+        a, b = b, a + b
+    
+except ValueError :
+    print(f"Veuillez entrer un nombre entier positif.")
