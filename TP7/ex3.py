@@ -7,3 +7,11 @@ moyennes_T1={
     "leontine":9,"maya":14,  "pablo" :19,"bernard":10, "vinciane":19,
     "daphne" :18, "Ludovic":9
 }
+
+def _rechercheeleve(nom):
+    if nom in moyennes_T1.keys():
+        print(nom,"est dans la classe")
+    else:
+        print(f"{nom} n'est pas dans la classe")
+        
+_rechercheeleve("Ludovic")
