@@ -13,5 +13,5 @@ def _rechercheeleve(nom):
         print(nom,"est dans la classe")
     else:
         print(f"{nom} n'est pas dans la classe")
-        
+
 _rechercheeleve("Ludovic")
