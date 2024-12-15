@@ -13,3 +13,5 @@ def meilleurs_eleves(dico):
         return []
     meilleure_moyenne = max(dico.values())
     return [nom for nom, moyenne in dico.items() if moyenne == meilleure_moyenne]
+
+print("Meilleurs élèves:", meilleurs_eleves(moyennes_T1))

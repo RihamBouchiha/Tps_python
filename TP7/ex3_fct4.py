@@ -10,3 +10,5 @@ moyennes_T1={
 
 def eleves_sous_moyenne(dico):
     return [nom for nom, moyenne in dico.items() if moyenne < 10]
+
+print("Élèves sous la moyenne:", eleves_sous_moyenne(moyennes_T1))
