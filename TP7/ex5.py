@@ -16,6 +16,5 @@ def comptage(mot):
             resultat[lettre] = 1
     return resultat
 
-# Test de la fonction
 mot_test = "PROGRAMMATION"
 print(f"Occurrences dans '{mot_test}' : {comptage(mot_test)}")

@@ -13,8 +13,8 @@ def calcul_variance(numbers):
     if not numbers:
         return 0
     
-    n = len(numbers)  # Nombre total d'éléments
-    moyenne = sum(numbers) / n  # Moyenne des nombres
+    n = len(numbers)  
+    moyenne = sum(numbers) / n  
     variance = sum((x - moyenne) ** 2 for x in numbers) / n  # Formule de la variance
     
     return variance
@@ -32,13 +32,10 @@ def calcul_ecart_type(numbers):
     variance = calcul_variance(numbers)
     return math.sqrt(variance)
 
-# Test de la fonction avec un tuple de nombres
 valeurs = (11, 10, 16, 12, 15, 19, 12, 9, 11, 16, 20, 20, 11, 13, 18, 10, 16, 20, 10, 14, 10, 14, 7, 17, 9, 9, 14, 19, 10, 19, 18, 9)
 
-# Calcul de la variance et de l'écart-type
 variance = calcul_variance(valeurs)
 ecart_type = calcul_ecart_type(valeurs)
 
-# Affichage des résultats
 print(f"Variance : {variance:.2f}")
 print(f"Écart-type : {ecart_type:.2f}")

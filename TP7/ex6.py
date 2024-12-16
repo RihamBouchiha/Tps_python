@@ -20,12 +20,12 @@ def trouver_tuples_premiers(n):
     - list : Une liste de tuples (p, q).
     """
     tuples = []
-    for p in range(2, n):  # On cherche les nombres premiers p
-        q = n - p  # On calcule q
+    for p in range(2, n):  
+        q = n - p 
         if est_premier(p) and est_premier(q) and p <= q:
-            tuples.append((p, q))  # On ajoute le tuple (p, q)
+            tuples.append((p, q))  
     return tuples
 
-# Test du programme
+
 n = 20
 print(f"Tuples (p, q) tels que p + q == {n} : {trouver_tuples_premiers(n)}")
